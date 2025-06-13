@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/64f40aa0-fc7f-4f56-84cd-cb6a03f4c710)# Practica4_Ultrasonico-y-DHT11
+Practica4_Ultrasonico-y-DHT11
 En este repositorio se mostrará cómo programar un Sensor DHT, una pantalla LCD y un Ultrasónico.
 
 ## INTRODUCCION
