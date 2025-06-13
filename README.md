@@ -1,4 +1,4 @@
-# Practica3_Ultrasonico-con-LCD
+![image](https://github.com/user-attachments/assets/64f40aa0-fc7f-4f56-84cd-cb6a03f4c710)# Practica4_Ultrasonico-y-DHT11
 En este repositorio se mostrará cómo programar un Sensor DHT, una pantalla LCD y un Ultrasónico.
 
 ## INTRODUCCION
@@ -33,89 +33,16 @@ Es necesario utilizar el simulador [WOKWI](https://wokwi.com/) para poder ejecut
 1. El primer paso será abrir la terminal de programación y colocar la siguente programación ya en dentro del simulador [WOKWI](https://wokwi.com/):
 
 ```
-#include <LiquidCrystal_I2C.h>
-#define I2C_ADDR    0x27
-#define LCD_COLUMNS 20
-#define LCD_LINES   4
-#include "DHTesp.h"
-const int Trigger = 4;   //Pin digital 2 para el Trigger del sensor
-const int Echo = 15;   //Pin digital 3 para el Echo del sensor
-const int DHT_PIN = 16;
-DHTesp dhtSensor;
 
-LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
 
-void setup() {
-  Serial.begin(9600);//iniciailzamos la comunicación
-  pinMode(Trigger, OUTPUT); //pin como salida
-  pinMode(Echo, INPUT);  //pin como entrada
-  digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
-  lcd.init();
-  lcd.backlight();
-   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
-}
 
-void loop()
-{
-TempAndHumidity  data = dhtSensor.getTempAndHumidity();
- 
-  long t; //timepo que demora en llegar el eco
-  long d; //distancia en centimetros
-
-  digitalWrite(Trigger, HIGH);
-  delayMicroseconds(10);          //Enviamos un pulso de 10us
-  digitalWrite(Trigger, LOW);
-  
-  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
-  d = t/59;             //escalamos el tiempo a una distancia en cm
-  
-  Serial.print("Distancia: ");
-  Serial.print(d);      //Enviamos serialmente el valor de la distancia
-  Serial.print("cm");
-  Serial.println();
-  delay(1000);          //Hacemos una pausa de 100ms
-
-  lcd.setCursor(0, 0);
-  lcd.print("   DIPLOMADO");
-  lcd.setCursor(0, 1); 
-  lcd.print(" AUTOMATIZACION");
-   delay(2000);
-  lcd.clear();
-
-   lcd.setCursor(0, 0);
-  lcd.print(" JAQUELINE R.H");
-  lcd.setCursor(0, 1); 
-  lcd.print("   INDUSTRIAL");
-   delay(2000);
-  lcd.clear();
-   lcd.setCursor(0, 0);
-  lcd.print("   07-06-2025");
-  delay(2000);
-  lcd.clear();
-  
-  
-  lcd.setCursor(0, 0);
-  lcd.print("DISTANCIA: " + String(d) + "cm");
-  
-  delay(2000);
-  lcd.clear();
-  
-  lcd.setCursor(0, 0);
-  lcd.print("  Temp: " + String(data.temperature, 1) + "\xDF"+"C  ");
-  lcd.setCursor(0, 1); 
-  lcd.print(" Humidity: " + String(data.humidity, 1) + "% ");
- 
-  delay(1000);
-  lcd.clear();
-}
 ```
-
 
 2. El segundo paso será instalar la libreria de DHT sensor library for ESPx:
 
 
 
-3. Lo siguiente va ser instalar la libreria de LiquidCrystal I2C:
+3. El segundo paso será instalar va ser instalar la libreria de LiquidCrystal I2C:
 
 
 
