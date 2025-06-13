@@ -1,4 +1,4 @@
-# Practica4 Ultrasonico y DHT11
+# Practica 4 Ultrasonico y DHT11
 En este repositorio se mostrará cómo programar un Sensor DHT, una pantalla LCD y un Ultrasónico.
 
 ## INTRODUCCION
@@ -149,7 +149,8 @@ El resultado final cuando la simulación haya funcionado, se verán los valores 
 
 ### Evidencias
 
-
+![]()
+![]()
 
 # Créditos
 
