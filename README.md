@@ -1,4 +1,4 @@
-# Practica 4 Ultrasonico y DHT11
+# Practica 4 Ultrasónico y DHT11
 En este repositorio se mostrará cómo programar un Sensor DHT, una pantalla LCD y un Ultrasónico.
 
 ## INTRODUCCION
@@ -112,25 +112,25 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 ```
 
-2. El segundo paso será instalar la libreria de DHT sensor library for ESPx:
+2. El segundo paso será instalar la librería de DHT sensor library for ESPx:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Librer%C3%ADa%20DHT%20Sensor.png)
 
-3. El segundo paso será instalar va ser instalar la libreria de LiquidCrystal I2C:
+3. El segundo paso será instalar va ser instalar la librería de LiquidCrystal I2C:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Librer%C3%ADa%20LyquidCrystal%20I2C.png)
 
 4. Acontinuación realizaremos la conexion del componente ```HC-SR04 ULTRASONIC Distance sensor``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Conexi%C3%B3n%20Ultras%C3%B3nico.png)
 
 5. Procederemos a crear la conexion entre la pantalla ```LCD I2C``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Conexi%C3%B3n%20LCD%20(I2C).png)
 
-6. Por último vamos a proceder a realizar la conexion entre el Sensor ```DHT11``` con la tarjeta ```ESP32```:
+6. Por último vamos a proceder a realizar la conexion entre el Sensor ```DHT22``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Conexi%C3%B3n%20DHT%20Sensor.png)
 
 ### Instrucciónes de operación
 1. El primer paso será entrar al simulador [WOKWI](https://wokwi.com/).
@@ -145,12 +145,12 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 El resultado final cuando la simulación haya funcionado, se verán los valores dentro de la pantalla ```LCD 16x2 (I2C)```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Resultado%20Final.png)
 
 ### Evidencias
 
-![]()
-![]()
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Evidencia%201.png)
+![](https://github.com/DaybeatAV/Practica4_Ultrasonico-y-DHT11/blob/main/Pr%C3%A1ctica%204%20Evidencia%202.png)
 
 # Créditos
 
